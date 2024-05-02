@@ -12,6 +12,42 @@ img{
   margin-top: 1%;
   margin-bottom: 1%;
 }
+.card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card.card-contact {
+    border-radius: 30px;
+    box-shadow: #999 ;
+    padding: 10px;
+}
+.card-contact-top {
+    /* margin-inline: auto; */
+    /* max-width: 70%; */
+    border-bottom: #999 1px solid;
+
+}
+
+.card .card-contact-img {
+    object-fit: cover;
+    max-width: 70%;
+    margin-inline: auto;
+}
+.card .card-contact-bottom {
+    padding: 30px;
+}
+.card .card-contact-bottom div {
+    padding: 30px;
+}
+.card .card-contact-bottom img {
+    object-fit: contain;
+}
+.card .card-contact-bottom div:first-of-type {
+    object-fit: contain;
+    border-right: #999 1px solid;
+}
 
 .row{
   display: flex;  
