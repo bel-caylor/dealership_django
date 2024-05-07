@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import CarModel, CarMake 
+from .models import CarModel, CarMake
 
 
 # Registering models with their respective admins
