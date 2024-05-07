@@ -1,3 +1,5 @@
+/*jshint esversion: 8 */
+
 const express = require('express');
 const mongoose = require('mongoose');
 const fs = require('fs');
@@ -87,8 +89,8 @@ app.get('/fetchDealer/:id', async (req, res) => {
 });
 
 //Express route to insert review
-app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
-  data = JSON.parse(req.body);
+app.post('/insert_review', express.raw({ type: '*/*' }), async ( req, res ) => {
+  data = JSON.parse( req.body );
   const documents = await Reviews.find().sort( { id: -1 } )
   let new_id = documents[0].id+1
 
