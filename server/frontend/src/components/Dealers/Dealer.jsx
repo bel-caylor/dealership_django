@@ -37,11 +37,11 @@ const Dealer = () => {
   }
 
   const get_reviews = async ()=>{
+      console.log(reviews_url);
     const res = await fetch(reviews_url, {
       method: "GET"
     });
     const retobj = await res.json();
-    
     if(retobj.status === 200) {
       if(retobj.reviews.length > 0){
         setReviews(retobj.reviews)
